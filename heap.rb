@@ -6,7 +6,7 @@ module BinaryHeapable
   def push(node)
     @store << node
     heapify_up!
-    pop if @limit && @store.size > @limit
+    pop if @limit && size > @limit
   end
 
   def pop
